@@ -1,0 +1,22 @@
+.main img{
+    position: absolute;
+    box-sizing: border-box;
+    margin-top: 10vh;
+    width: calc(100% - 15vw);
+    max-width: 1200px;
+    max-height: 80vh;
+    z-index: -1;
+    right: 15vw;
+  }
+
+.intro{
+    position: absolute;
+    margin-top:25vh;
+    margin-left:40px;
+    font-size: 1.5em;
+}
+
+.intro h2, .intro h1{
+    font-weight: 100;
+
+}

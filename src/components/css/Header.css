@@ -1,0 +1,38 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 40px;
+    margin-top:20px;
+
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20%;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+}
+.cartCount{
+    position: absolute;
+    top: 0;
+    right: -20px;
+    background-color: #B7C0C6;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color:white;
+    font-size:small;
+
+
+
+}
+a:hover{
+    opacity: .7;
+
+}
