@@ -13,6 +13,7 @@ const cart = useSelector(state =>state.cart)
                 </Link>
                 <div className="nav">
                     <Link to="/browse">Browse</Link>
+                    <Link to="/admin">Add Product</Link>
                     <Link to="/search">
 
                         <img width={20} style={{ marginBottom: -50}} src="./images/search.svg" alt="" />
