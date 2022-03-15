@@ -1,0 +1,38 @@
+import{ ADD_TO_CART,REMOVE_FROM_CART} from '../types/cartTypes'
+
+
+export const cartReducer = (state = [], {type,payload}) => {
+    switch(type) {
+        case ADD_TO_CART:
+            let cart = [...state,{
+                name:payload.name,
+                img: payload.img,
+                productId: payload.productId,
+                cartId: payload.cartId
+
+               
+            }]
+            localStorage.setItem('cart', JSON.stringify(cart))
+            return cart
+
+
+
+        case REMOVE_FROM_CART:
+            let modifiedCart=  state.filter(item => item.cartId !== payload)
+            localStorage.setItem('cart', JSON.stringify(modifiedCart))
+            return modifiedCart
+
+
+        default:
+            return state
+    }
+   
+}
+
+
+
+
+
+
+
+
